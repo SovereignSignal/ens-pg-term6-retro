@@ -1,11 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, TrendingUp, Users, Globe, Shield, Code, GraduationCap, CheckCircle2, ArrowRight } from "lucide-react";
+import { ExternalLink, TrendingUp, Users, Globe, Shield, Code, GraduationCap, CheckCircle2, ArrowRight, ArrowUpRight } from "lucide-react";
 import { APP_LOGO, APP_TITLE } from "@/const";
 import { GrantDistributionCharts } from "@/components/GrantDistributionCharts";
-import { StrategicGrantsTimeline } from "@/components/StrategicGrantsTimeline";
-import { ImpactStories } from "@/components/ImpactStories";
 
 export default function Home() {
   const scrollToSection = (id: string) => {
@@ -141,319 +139,555 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Strategic Grants Section */}
+      {/* Strategic Grants as Case Studies */}
       <section id="strategic" className="py-20 px-4 bg-muted/30">
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Badge className="mb-4" variant="secondary">Strategic Grants</Badge>
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">Core Infrastructure & Advocacy</h3>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">Impact Case Studies</h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Six strategic grants supporting essential ecosystem infrastructure, evaluated on <strong>Infrastructure</strong>, <strong>Utility</strong>, and <strong>Education</strong> impact.
+              Six strategic grants supporting essential ecosystem infrastructure, each demonstrating measurable impact through verifiable evidence.
             </p>
           </div>
 
-          {/* Timeline */}
-          <StrategicGrantsTimeline />
-
-          {/* Grant Cards with Enhanced Impact Evidence */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-            {/* Vyper */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-2xl mb-2">Vyper</CardTitle>
-                    <CardDescription>Smart Contract Language</CardDescription>
+          <div className="space-y-12">
+            {/* Vyper Case Study */}
+            <Card className="overflow-hidden border-2">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 border-b">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-4">
+                    <div className="h-16 w-16 rounded-2xl bg-primary/20 flex items-center justify-center">
+                      <Shield className="h-8 w-8 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-bold mb-1">Protecting Critical DeFi Infrastructure</h4>
+                      <p className="text-muted-foreground">Vyper • Security Infrastructure • $50,000 USDC</p>
+                    </div>
                   </div>
-                  <Badge variant="secondary">$50,000</Badge>
+                  <Badge variant="secondary" className="text-lg px-4 py-2">Strategic Grant</Badge>
                 </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
                 <p className="text-sm">
-                  Vyper secures over <strong>$4.7 billion in TVL</strong> across Curve, Lido, and Yearn. Term 6 funding enabled critical security fixes including <strong>CVE-2025-21607</strong> and the translation of ENS Universal Resolver to Vyper.
+                  Vyper secures over $4.7 billion in TVL across Curve, Lido, and Yearn, providing critical compiler diversity that prevents catastrophic ecosystem-wide failure from Solidity vulnerabilities.
                 </p>
-                
-                <div className="space-y-2">
-                  <div className="flex items-start gap-2">
-                    <Shield className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Infrastructure Impact</p>
-                      <p className="text-xs text-muted-foreground">4 security fixes deployed (March 2025), ENS Universal Resolver translation, compiler diversity</p>
-                    </div>
+              </div>
+              
+              <CardContent className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                  <div>
+                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
+                    <p className="text-sm text-muted-foreground">
+                      A single vulnerability in Solidity could compromise the entire Ethereum DeFi ecosystem. Without compiler diversity, billions in TVL remain at systemic risk. Security vulnerabilities like CVE-2025-21607 could cause silent failures in smart contract logic.
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Utility Impact</p>
-                      <p className="text-xs text-muted-foreground">$4.7B TVL protected, systemic risk mitigation, EF matching funds secured</p>
-                    </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
+                    <p className="text-sm text-muted-foreground">
+                      ENS funding enabled critical security fixes including CVE-2025-21607 (March 2025), translation of ENS Universal Resolver to Vyper, and ongoing compiler hardening through fuzz testing. Secured Ethereum Foundation matching funds for sustained development.
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <GraduationCap className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Education Impact</p>
-                      <p className="text-xs text-muted-foreground">ETHTokyo workshop (Sept 2025), India events (Oct 2025), Chinese community translations</p>
+                </div>
+
+                <div className="border-t pt-6">
+                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">TVL Secured</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">At Risk</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">$4.7B+</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Security Fixes</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">Vulnerable</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">4 Deployed</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Developer Reach</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">Limited</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">Global</span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-vyper/21171" target="_blank" rel="noopener noreferrer">
-                    View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
+                <div className="mt-6 pt-6 border-t">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-vyper/21171" target="_blank" rel="noopener noreferrer">
+                      View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            {/* DRC */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-2xl mb-2">Decentralization Research Center</CardTitle>
-                    <CardDescription>Policy & Advocacy</CardDescription>
+            {/* DRC Case Study */}
+            <Card className="overflow-hidden border-2">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 border-b">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-4">
+                    <div className="h-16 w-16 rounded-2xl bg-primary/20 flex items-center justify-center">
+                      <Users className="h-8 w-8 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-bold mb-1">Shaping Global Crypto Policy</h4>
+                      <p className="text-muted-foreground">Decentralization Research Center • Policy & Advocacy • $150,000 USDC</p>
+                    </div>
                   </div>
-                  <Badge variant="secondary">$150,000</Badge>
+                  <Badge variant="secondary" className="text-lg px-4 py-2">Strategic Grant</Badge>
                 </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
                 <p className="text-sm">
-                  DRC's research framework was cited in <strong>a16z Crypto's SEC submission</strong> (Aug 2025) and <strong>Chia Network's S-1 filing</strong>. The 2025 Summit convened <strong>100 policymakers and industry leaders</strong>.
+                  DRC has emerged as the leading think tank for decentralization policy, directly influencing regulatory frameworks through research cited by a16z Crypto, Chia Network, and the SEC.
                 </p>
-                
-                <div className="space-y-2">
-                  <div className="flex items-start gap-2">
-                    <Shield className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Infrastructure Impact</p>
-                      <p className="text-xs text-muted-foreground">Control-based framework for defining decentralization under law</p>
-                    </div>
+              </div>
+              
+              <CardContent className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                  <div>
+                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
+                    <p className="text-sm text-muted-foreground">
+                      Regulatory uncertainty threatens the entire Web3 ecosystem. Without clear legal frameworks for decentralization, protocols face existential risk from enforcement actions. Policymakers lack research-backed standards to evaluate blockchain projects.
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Utility Impact</p>
-                      <p className="text-xs text-muted-foreground">Senate RFI response (Aug 5), cited by a16z and Chia Network, SEC meeting (Sept 16)</p>
-                    </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
+                    <p className="text-sm text-muted-foreground">
+                      DRC published "Designing Policy for a Flourishing Blockchain Industry" (April 2025), proposing a control-based framework for defining decentralization under law. Submitted response to Senate Banking Committee RFI (Aug 5) and met with SEC Crypto Task Force (Sept 16).
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <GraduationCap className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Education Impact</p>
-                      <p className="text-xs text-muted-foreground">100 attendees at 2025 Summit (April 2, DC), Harvard & Stanford partnerships</p>
+                </div>
+
+                <div className="border-t pt-6">
+                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Policy Influence</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">No Framework</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">2 Citations</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Policymakers Reached</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">Limited</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">100+</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Regulatory Engagement</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">None</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">SEC Meeting</span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-the-decentralization-research-center-drc/20319" target="_blank" rel="noopener noreferrer">
-                    View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
+                <div className="mt-6 pt-6 border-t">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-the-decentralization-research-center-drc/20319" target="_blank" rel="noopener noreferrer">
+                      View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            {/* Argot */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-2xl mb-2">Argot Collective</CardTitle>
-                    <CardDescription>Solidity & Dev Tools</CardDescription>
+            {/* Argot Case Study */}
+            <Card className="overflow-hidden border-2">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 border-b">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-4">
+                    <div className="h-16 w-16 rounded-2xl bg-primary/20 flex items-center justify-center">
+                      <Code className="h-8 w-8 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-bold mb-1">Sustaining Ethereum's Core Development</h4>
+                      <p className="text-muted-foreground">Argot Collective • Solidity & Dev Tools • $100,000 USDC</p>
+                    </div>
                   </div>
-                  <Badge variant="secondary">$100,000</Badge>
+                  <Badge variant="secondary" className="text-lg px-4 py-2">Strategic Grant</Badge>
                 </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
                 <p className="text-sm">
-                  Argot maintains Solidity (<strong>25,357 GitHub stars</strong>) and launched the Sourcify 4byte API with <strong>4.7M function signatures</strong>, making <strong>1.9M unverified contracts</strong> transparent.
+                  Argot maintains Solidity (25,357 GitHub stars) and launched Sourcify 4byte API with 4.7M function signatures, making 1.9M unverified contracts transparent.
                 </p>
-                
-                <div className="space-y-2">
-                  <div className="flex items-start gap-2">
-                    <Shield className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Infrastructure Impact</p>
-                      <p className="text-xs text-muted-foreground">Core Solidity 1.0 development, new IR pipeline, $250B+ TVL depends on maintained tools</p>
-                    </div>
+              </div>
+              
+              <CardContent className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                  <div>
+                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
+                    <p className="text-sm text-muted-foreground">
+                      Every ENS contract and $250B+ TVL across Ethereum depends on Solidity, but the language faces technical debt and needs evolution toward 1.0. Nearly 2 million unverified contracts remain opaque to security tools, creating blind spots for users.
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Utility Impact</p>
-                      <p className="text-xs text-muted-foreground">4.7M signatures in new 4byte database, 1.9M from unverified contracts now decodable</p>
-                    </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
+                    <p className="text-sm text-muted-foreground">
+                      Argot launched Core Solidity development (Oct 2025), implemented new IR pipeline for optimization, and released Sourcify 4byte API (Oct 2025) with 4.7M signatures. This makes transaction data human-readable across wallets, explorers, and security tools.
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <GraduationCap className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Education Impact</p>
-                      <p className="text-xs text-muted-foreground">"Road to Core Solidity" blog series (Oct 2025), Solidity Summit presentation (Nov 18)</p>
+                </div>
+
+                <div className="border-t pt-6">
+                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Contracts Made Transparent</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">Opaque</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">1.9M</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Function Signatures</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">Limited</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">4.7M</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">TVL Protected</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">At Risk</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">$250B+</span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-argot/21443" target="_blank" rel="noopener noreferrer">
-                    View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
+                <div className="mt-6 pt-6 border-t">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-argot/21443" target="_blank" rel="noopener noreferrer">
+                      View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            {/* Fabric */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-2xl mb-2">Fabric</CardTitle>
-                    <CardDescription>Based Rollup Infrastructure</CardDescription>
+            {/* Fabric Case Study */}
+            <Card className="overflow-hidden border-2">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 border-b">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-4">
+                    <div className="h-16 w-16 rounded-2xl bg-primary/20 flex items-center justify-center">
+                      <TrendingUp className="h-8 w-8 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-bold mb-1">Enabling ENS Layer 2 Interoperability</h4>
+                      <p className="text-muted-foreground">Fabric • Based Rollup Infrastructure • $50,000 USDC</p>
+                    </div>
                   </div>
-                  <Badge variant="secondary">$50,000</Badge>
+                  <Badge variant="secondary" className="text-lg px-4 py-2">Strategic Grant</Badge>
                 </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
                 <p className="text-sm">
-                  Fabric's Commit-Boost has <strong>~30% validator adoption</strong> on Ethereum mainnet. Critical for ENS's Namechain, enabling <strong>99% cost reduction</strong> for domain operations.
+                  Fabric's Commit-Boost has ~30% validator adoption on Ethereum mainnet, enabling ENS's Namechain to achieve 99% cost reduction for domain operations.
                 </p>
-                
-                <div className="space-y-2">
-                  <div className="flex items-start gap-2">
-                    <Shield className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Infrastructure Impact</p>
-                      <p className="text-xs text-muted-foreground">Based rollup standards, 2 audits completed, 20+ ecosystem participants</p>
-                    </div>
+              </div>
+              
+              <CardContent className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                  <div>
+                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
+                    <p className="text-sm text-muted-foreground">
+                      ENS domain registration costs on mainnet are prohibitively expensive for many users. Without Layer 2 infrastructure, ENS cannot scale to serve billions of users. L2 fragmentation prevents seamless interoperability.
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Utility Impact</p>
-                      <p className="text-xs text-muted-foreground">99% cost reduction for ENS, L2 interoperability, 30% validator adoption</p>
-                    </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
+                    <p className="text-sm text-muted-foreground">
+                      Fabric developed based rollup standards with support from Optimism, Namechain, Arbitrum, and Scroll. Completed 2 security audits on registry contract. Achieved ~30% validator adoption for Commit-Boost, enabling pre-confirmations and L2-to-L2 bridging.
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <GraduationCap className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Education Impact</p>
-                      <p className="text-xs text-muted-foreground">Fabric website compiles research, testnet for DevConnect, ecosystem coordination</p>
+                </div>
+
+                <div className="border-t pt-6">
+                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Cost Reduction</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">Mainnet</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">99%</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Validator Adoption</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">0%</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">~30%</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Ecosystem Participants</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">Fragmented</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">20+</span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-remix-labs-fabric/19795" target="_blank" rel="noopener noreferrer">
-                    View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
+                <div className="mt-6 pt-6 border-t">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-remix-labs-fabric/19795" target="_blank" rel="noopener noreferrer">
+                      View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            {/* Remix Labs */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-2xl mb-2">Remix Labs</CardTitle>
-                    <CardDescription>Ethereum IDE</CardDescription>
+            {/* Remix Labs Case Study */}
+            <Card className="overflow-hidden border-2">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 border-b">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-4">
+                    <div className="h-16 w-16 rounded-2xl bg-primary/20 flex items-center justify-center">
+                      <GraduationCap className="h-8 w-8 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-bold mb-1">Maintaining Ethereum's Gateway IDE</h4>
+                      <p className="text-muted-foreground">Remix Labs • Ethereum IDE • $50,000 USDC</p>
+                    </div>
                   </div>
-                  <Badge variant="secondary">$50,000</Badge>
+                  <Badge variant="secondary" className="text-lg px-4 py-2">Strategic Grant</Badge>
                 </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
                 <p className="text-sm">
-                  Remix has deployed <strong>12+ million smart contracts</strong> and is the primary tool for Ethereum education globally. Grant supports transition from EF to independent sustainability.
+                  Remix has deployed 12+ million smart contracts and is the primary tool for Ethereum education globally, used in university courses and hackathons worldwide.
                 </p>
-                
-                <div className="space-y-2">
-                  <div className="flex items-start gap-2">
-                    <Shield className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Infrastructure Impact</p>
-                      <p className="text-xs text-muted-foreground">Browser-based IDE, 12M+ contracts deployed, new platform launched (Q1 2025)</p>
-                    </div>
+              </div>
+              
+              <CardContent className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                  <div>
+                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
+                    <p className="text-sm text-muted-foreground">
+                      New developers face high barriers to entry with complex local development environments. Without zero-friction onboarding, Ethereum loses potential builders. Remix's transition from EF stewardship requires sustainable funding.
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Utility Impact</p>
-                      <p className="text-xs text-muted-foreground">Zero-friction onboarding, ENS integration planned, EF matching (25% of $200k total)</p>
-                    </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
+                    <p className="text-sm text-muted-foreground">
+                      ENS grant (25% of $200k total EF match) supports Remix's transition to independent sustainability. Browser-based IDE requires no installation, enabling immediate smart contract development. New platform launched Q1 2025 with ENS integration planned.
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <GraduationCap className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Education Impact</p>
-                      <p className="text-xs text-muted-foreground">Global standard for Ethereum education, university courses, hackathon workshops</p>
+                </div>
+
+                <div className="border-t pt-6">
+                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Contracts Deployed</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">10M</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">12M+</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Developer Onboarding</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">Complex</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">Zero-Friction</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Global Education</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">Limited</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">Standard</span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-remix-labs-fabric/19795" target="_blank" rel="noopener noreferrer">
-                    View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
+                <div className="mt-6 pt-6 border-t">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-remix-labs-fabric/19795" target="_blank" rel="noopener noreferrer">
+                      View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            {/* ICANN */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-2xl mb-2">ICANN Engagement</CardTitle>
-                    <CardDescription>Policy Advocacy</CardDescription>
+            {/* ICANN Case Study */}
+            <Card className="overflow-hidden border-2">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 border-b">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-4">
+                    <div className="h-16 w-16 rounded-2xl bg-primary/20 flex items-center justify-center">
+                      <Globe className="h-8 w-8 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-bold mb-1">Representing Web3 in Global Internet Governance</h4>
+                      <p className="text-muted-foreground">ICANN Engagement • Policy Advocacy • Up to $25,000 USDC</p>
+                    </div>
                   </div>
-                  <Badge variant="secondary">$25,000</Badge>
+                  <Badge variant="secondary" className="text-lg px-4 py-2">Strategic Grant</Badge>
                 </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
                 <p className="text-sm">
-                  Expert representation in ICANN forums, with <strong>2 public comment submissions</strong> on the 2026 gTLD Applicant Guidebook and participation at <strong>ICANN84 in Dublin</strong>.
+                  Expert representation in ICANN forums with 2 public comment submissions on the 2026 gTLD Applicant Guidebook and participation at ICANN84 in Dublin.
                 </p>
-                
-                <div className="space-y-2">
-                  <div className="flex items-start gap-2">
-                    <Shield className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Infrastructure Impact</p>
-                      <p className="text-xs text-muted-foreground">Influencing 2026 gTLD policy, SSAC RIDE Working Party engagement</p>
-                    </div>
+              </div>
+              
+              <CardContent className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                  <div>
+                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
+                    <p className="text-sm text-muted-foreground">
+                      Web3 domains face potential namespace collisions with traditional DNS. ICANN's 2026 gTLD policy could impact ENS users. Without expert representation, web3 perspectives are absent from global internet governance discussions.
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Utility Impact</p>
-                      <p className="text-xs text-muted-foreground">Web3 representation at ICANN, 2 public comments on gTLD AGB, collision prevention</p>
-                    </div>
+                  <div>
+                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
+                    <p className="text-sm text-muted-foreground">
+                      Emily Murray attended ICANN84 in Dublin (Oct 25-30, 2025), submitted 2 rounds of public comments on 2026 gTLD Applicant Guidebook, and participated in SSAC RIDE Working Party. Educated ICANN stakeholders on web3 domains and countered misinformation.
+                    </p>
                   </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <GraduationCap className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-sm font-medium">Education Impact</p>
-                      <p className="text-xs text-muted-foreground">ICANN84 report shared with community, stakeholder education on web3 domains</p>
+                </div>
+
+                <div className="border-t pt-6">
+                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Web3 Representation</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">None</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">Expert Voice</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">Policy Submissions</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">0</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">2</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-2">ICANN Meetings</p>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">Before:</span>
+                        <span className="text-lg font-bold">Limited</span>
+                      </div>
+                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-sm text-muted-foreground">After:</span>
+                        <span className="text-lg font-bold text-primary">ICANN84</span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-icann-engagement-and-policy-advocacy/19918" target="_blank" rel="noopener noreferrer">
-                    View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
+                <div className="mt-6 pt-6 border-t">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-icann-engagement-and-policy-advocacy/19918" target="_blank" rel="noopener noreferrer">
+                      View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -580,9 +814,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Impact Stories */}
-      <ImpactStories />
 
       {/* Impact & Data Section */}
       <section id="impact" className="py-20 px-4 bg-muted/30">

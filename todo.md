@@ -89,3 +89,12 @@
 - [x] Synthesize findings into impact framework (Infrastructure, Utility, Education)
 - [x] Update dashboard with verifiable impact evidence
 - [x] Update comprehensive report with references and sources
+
+
+## Strategic Grants Redesign
+
+- [x] Remove timeline component from Strategic Grants section
+- [x] Remove separate Impact Stories section
+- [x] Redesign each strategic grant as detailed case study with Challenge/Solution/Impact Metrics
+- [x] Add icon/visual for each grant category
+- [x] Format impact metrics as before/after comparisons
