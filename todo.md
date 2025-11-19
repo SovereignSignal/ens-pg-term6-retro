@@ -114,3 +114,9 @@
 - [x] Simplify builder grants section language
 - [x] Edit impact section for directness
 - [x] Remove promotional tone throughout site
+
+
+## Review Hero Metrics Boxes
+
+- [x] Remove all 6 hero metric boxes from overview section
+- [x] Let case studies speak for themselves with specific details
