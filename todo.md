@@ -98,3 +98,10 @@
 - [x] Redesign each strategic grant as detailed case study with Challenge/Solution/Impact Metrics
 - [x] Add icon/visual for each grant category
 - [x] Format impact metrics as before/after comparisons
+
+
+## Case Study Simplification
+
+- [x] Remove Impact Metrics boxes from all strategic grant case studies
+- [x] Replace Challenge/Solution sections with single paragraph describing ecosystem impact
+- [x] Simplify case study layout for better readability

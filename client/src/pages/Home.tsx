@@ -172,63 +172,11 @@ export default function Home() {
               </div>
               
               <CardContent className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-                  <div>
-                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
-                    <p className="text-sm text-muted-foreground">
-                      A single vulnerability in Solidity could compromise the entire Ethereum DeFi ecosystem. Without compiler diversity, billions in TVL remain at systemic risk. Security vulnerabilities like CVE-2025-21607 could cause silent failures in smart contract logic.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
-                    <p className="text-sm text-muted-foreground">
-                      ENS funding enabled critical security fixes including CVE-2025-21607 (March 2025), translation of ENS Universal Resolver to Vyper, and ongoing compiler hardening through fuzz testing. Secured Ethereum Foundation matching funds for sustained development.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="border-t pt-6">
-                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">TVL Secured</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">At Risk</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">$4.7B+</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Security Fixes</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">Vulnerable</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">4 Deployed</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Developer Reach</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">Limited</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">Global</span>
-                      </div>
-                    </div>
-                  </div>
+                <div className="mb-6">
+                  <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Vyper provides critical compiler diversity for Ethereum, protecting over $4.7 billion in TVL across Curve, Lido, and Yearn. A single vulnerability in Solidity could compromise the entire DeFi ecosystem—Vyper ensures that doesn't happen. ENS funding enabled the team to deploy four critical security fixes including CVE-2025-21607, which prevented silent failures in smart contract logic that could have led to catastrophic losses. The grant also supported translation of the ENS Universal Resolver to Vyper, demonstrating the language's production readiness for complex protocol development. With Ethereum Foundation matching funds secured, this investment ensures long-term compiler diversity and ecosystem resilience. The team ran workshops at ETHTokyo, engaged with the Chinese community on translations, and is partnering with BuidlGuidl for educational content, expanding Vyper's reach to the next generation of Ethereum developers.
+                  </p>
                 </div>
 
                 <div className="mt-6 pt-6 border-t">
@@ -262,63 +210,11 @@ export default function Home() {
               </div>
               
               <CardContent className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-                  <div>
-                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
-                    <p className="text-sm text-muted-foreground">
-                      Regulatory uncertainty threatens the entire Web3 ecosystem. Without clear legal frameworks for decentralization, protocols face existential risk from enforcement actions. Policymakers lack research-backed standards to evaluate blockchain projects.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
-                    <p className="text-sm text-muted-foreground">
-                      DRC published "Designing Policy for a Flourishing Blockchain Industry" (April 2025), proposing a control-based framework for defining decentralization under law. Submitted response to Senate Banking Committee RFI (Aug 5) and met with SEC Crypto Task Force (Sept 16).
-                    </p>
-                  </div>
-                </div>
-
-                <div className="border-t pt-6">
-                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Policy Influence</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">No Framework</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">2 Citations</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Policymakers Reached</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">Limited</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">100+</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Regulatory Engagement</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">None</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">SEC Meeting</span>
-                      </div>
-                    </div>
-                  </div>
+                <div className="mb-6">
+                  <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
+                  <p className="text-muted-foreground leading-relaxed">
+                    The DRC has emerged as the leading think tank for decentralization policy, directly shaping the regulatory frameworks that will determine whether Web3 can thrive or be strangled by unclear laws. Their April 2025 report "Designing Policy for a Flourishing Blockchain Industry" proposed a control-based framework for defining decentralization under law—research that was immediately cited by a16z Crypto in their SEC submission and by Chia Network in their S-1 filing. ENS funding enabled the DRC to submit a response to the Senate Banking Committee's RFI on digital assets, meet directly with the SEC Crypto Task Force, and host the 2025 Decentralized Tech Summit at the National Press Club, educating over 100 policymakers, academics, and industry experts. This work provides the intellectual foundation for sensible crypto regulation, protecting not just ENS but the entire ecosystem from regulatory overreach. With partnerships at Harvard Kennedy School and Stanford Center for Blockchain Research, the DRC is building the academic credibility needed to influence policy at the highest levels.
+                  </p>
                 </div>
 
                 <div className="mt-6 pt-6 border-t">
@@ -352,63 +248,11 @@ export default function Home() {
               </div>
               
               <CardContent className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-                  <div>
-                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
-                    <p className="text-sm text-muted-foreground">
-                      Every ENS contract and $250B+ TVL across Ethereum depends on Solidity, but the language faces technical debt and needs evolution toward 1.0. Nearly 2 million unverified contracts remain opaque to security tools, creating blind spots for users.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
-                    <p className="text-sm text-muted-foreground">
-                      Argot launched Core Solidity development (Oct 2025), implemented new IR pipeline for optimization, and released Sourcify 4byte API (Oct 2025) with 4.7M signatures. This makes transaction data human-readable across wallets, explorers, and security tools.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="border-t pt-6">
-                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Contracts Made Transparent</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">Opaque</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">1.9M</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Function Signatures</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">Limited</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">4.7M</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">TVL Protected</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">At Risk</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">$250B+</span>
-                      </div>
-                    </div>
-                  </div>
+                <div className="mb-6">
+                  <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Argot Collective maintains Solidity—the language that powers every ENS contract and over $250 billion in TVL across Ethereum. Formed by 25 former Ethereum Foundation employees, the team is responsible for the most critical infrastructure in the ecosystem. ENS funding supports the transition to Core Solidity 1.0, including a new IR pipeline that will improve compilation times and prepare the language for future network upgrades. In October 2025, Argot launched the Sourcify 4byte API with 4.7 million function signatures, making 1.9 million previously unverified contracts transparent to wallets, block explorers, and security tools. This dramatically improves security for Web3 users by making transaction data human-readable. The team is also maintaining hevm (formal verification), Sourcify (contract verification), and Act (specification language)—all essential public goods. With the "Road to Core Solidity" blog series and participation in Solidity Summit 2025, Argot is transparently communicating the language's evolution to the developer community while ensuring Ethereum's foundation remains secure and performant.
+                  </p>
                 </div>
 
                 <div className="mt-6 pt-6 border-t">
@@ -442,63 +286,11 @@ export default function Home() {
               </div>
               
               <CardContent className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-                  <div>
-                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
-                    <p className="text-sm text-muted-foreground">
-                      ENS domain registration costs on mainnet are prohibitively expensive for many users. Without Layer 2 infrastructure, ENS cannot scale to serve billions of users. L2 fragmentation prevents seamless interoperability.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
-                    <p className="text-sm text-muted-foreground">
-                      Fabric developed based rollup standards with support from Optimism, Namechain, Arbitrum, and Scroll. Completed 2 security audits on registry contract. Achieved ~30% validator adoption for Commit-Boost, enabling pre-confirmations and L2-to-L2 bridging.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="border-t pt-6">
-                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Cost Reduction</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">Mainnet</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">99%</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Validator Adoption</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">0%</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">~30%</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Ecosystem Participants</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">Fragmented</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">20+</span>
-                      </div>
-                    </div>
-                  </div>
+                <div className="mb-6">
+                  <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Fabric is building the infrastructure that will enable ENS's Namechain to achieve a 99% cost reduction for domain operations, making ENS accessible to billions of users. The initiative coordinates over 20 ecosystem participants including Optimism, Arbitrum, Scroll, and Namechain to develop neutral standards for based rollups. ENS funding supported the completion of two security audits on the registry contract and helped achieve approximately 30% validator adoption for Commit-Boost on Ethereum mainnet. This infrastructure enables pre-confirmations and seamless L2-to-L2 bridging, solving the fragmentation problem that has plagued the Layer 2 ecosystem. Fabric's work directly benefits ENS by providing the technical foundation for Namechain's proof of concept with Linea, demonstrating that based rollup capabilities can deliver the scalability ENS needs without sacrificing security. By creating shared standards rather than proprietary solutions, Fabric ensures that the entire Ethereum ecosystem benefits from this infrastructure, reducing duplication and accelerating innovation across all Layer 2s.
+                  </p>
                 </div>
 
                 <div className="mt-6 pt-6 border-t">
@@ -532,63 +324,11 @@ export default function Home() {
               </div>
               
               <CardContent className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-                  <div>
-                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
-                    <p className="text-sm text-muted-foreground">
-                      New developers face high barriers to entry with complex local development environments. Without zero-friction onboarding, Ethereum loses potential builders. Remix's transition from EF stewardship requires sustainable funding.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
-                    <p className="text-sm text-muted-foreground">
-                      ENS grant (25% of $200k total EF match) supports Remix's transition to independent sustainability. Browser-based IDE requires no installation, enabling immediate smart contract development. New platform launched Q1 2025 with ENS integration planned.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="border-t pt-6">
-                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Contracts Deployed</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">10M</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">12M+</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Developer Onboarding</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">Complex</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">Zero-Friction</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Global Education</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">Limited</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">Standard</span>
-                      </div>
-                    </div>
-                  </div>
+                <div className="mb-6">
+                  <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Remix is the gateway to Ethereum development, having deployed over 12 million smart contracts and serving as the primary tool for Ethereum education globally. Used in university courses, bootcamps, and hackathons worldwide, Remix provides zero-friction onboarding—no installation required, just open a browser and start building. ENS funding (25% of the $200,000 total with Ethereum Foundation matching) supports Remix's critical transition from EF stewardship to independent sustainability. The first iteration of the new Remix platform launched in Q1 2025, with ENS integration and dedicated subdomains for storage and test contracts under discussion. This ensures that the tool that has educated thousands of developers remains free, accessible, and continuously improved. By supporting Remix, ENS invests in the next generation of Ethereum builders—many of whom will go on to build on ENS itself. The team is developing an impact page with Dune analytics integration to provide transparent metrics on the platform's reach and influence, demonstrating the compounding returns of investing in developer education infrastructure.
+                  </p>
                 </div>
 
                 <div className="mt-6 pt-6 border-t">
@@ -622,63 +362,11 @@ export default function Home() {
               </div>
               
               <CardContent className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-                  <div>
-                    <h5 className="font-semibold text-red-600 mb-3">The Challenge</h5>
-                    <p className="text-sm text-muted-foreground">
-                      Web3 domains face potential namespace collisions with traditional DNS. ICANN's 2026 gTLD policy could impact ENS users. Without expert representation, web3 perspectives are absent from global internet governance discussions.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-primary mb-3">The Solution</h5>
-                    <p className="text-sm text-muted-foreground">
-                      Emily Murray attended ICANN84 in Dublin (Oct 25-30, 2025), submitted 2 rounds of public comments on 2026 gTLD Applicant Guidebook, and participated in SSAC RIDE Working Party. Educated ICANN stakeholders on web3 domains and countered misinformation.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="border-t pt-6">
-                  <h5 className="font-semibold mb-4">Impact Metrics</h5>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Web3 Representation</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">None</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">Expert Voice</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Policy Submissions</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">0</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">2</span>
-                      </div>
-                    </div>
-
-                    <div className="bg-muted/50 p-4 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">ICANN Meetings</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">Before:</span>
-                        <span className="text-lg font-bold">Limited</span>
-                      </div>
-                      <ArrowUpRight className="h-4 w-4 text-primary my-1" />
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-muted-foreground">After:</span>
-                        <span className="text-lg font-bold text-primary">ICANN84</span>
-                      </div>
-                    </div>
-                  </div>
+                <div className="mb-6">
+                  <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
+                  <p className="text-muted-foreground leading-relaxed">
+                    ICANN governs the traditional internet's domain name system, and its policies directly impact ENS users. Without expert representation in ICANN forums, web3 naming systems face potential namespace collisions, regulatory misunderstandings, and policy decisions made without decentralized perspectives. ENS funding enabled Emily Murray to attend ICANN84 in Dublin (October 25-30, 2025), participate in the SSAC RIDE Working Party on web3 naming issues, and submit two rounds of public comments on the 2026 gTLD Applicant Guidebook—the policy framework that will govern the next generation of top-level domains. This advocacy ensures that ENS's interests are represented in global internet governance discussions, that ICANN stakeholders receive accurate information about web3 domains, and that misinformation is countered with technical expertise. Emily's work protects ENS users from potential conflicts with traditional DNS while educating the ICANN community on the security and innovation benefits of decentralized naming. With ICANN85 in Mumbai planned, this ongoing engagement ensures ENS has a voice in the forums where critical internet infrastructure decisions are made.
+                  </p>
                 </div>
 
                 <div className="mt-6 pt-6 border-t">
