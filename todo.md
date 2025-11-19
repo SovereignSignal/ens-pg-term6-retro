@@ -76,3 +76,16 @@
 - [x] Add Vyper case study with ecosystem impact data
 - [x] Add Fabric case study with validator adoption metrics
 - [x] Integrate Impact Stories section into the page
+
+
+## Deep Impact Research & Verification
+
+- [x] Research Vyper: compiler diversity, TVL protected, security infrastructure, co-funding
+- [x] Research DRC: policy impact, institutional reach, advocacy outcomes
+- [x] Research Argot: infrastructure maintained, ecosystem dependencies, long-term commitment
+- [x] Research Fabric: Namechain enablement, interoperability standards, cost reduction
+- [x] Research Remix Labs: developer reach, educational impact, contract deployments
+- [x] Research ICANN Engagement: policy influence, gTLD advocacy, web3 representation
+- [x] Synthesize findings into impact framework (Infrastructure, Utility, Education)
+- [x] Update dashboard with verifiable impact evidence
+- [x] Update comprehensive report with references and sources
