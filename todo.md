@@ -105,3 +105,12 @@
 - [x] Remove Impact Metrics boxes from all strategic grant case studies
 - [x] Replace Challenge/Solution sections with single paragraph describing ecosystem impact
 - [x] Simplify case study layout for better readability
+
+
+## Copy Editing - Remove Flowery Language
+
+- [x] Review and simplify hero section copy
+- [x] Remove unnecessary adjectives from case study descriptions
+- [x] Simplify builder grants section language
+- [x] Edit impact section for directness
+- [x] Remove promotional tone throughout site

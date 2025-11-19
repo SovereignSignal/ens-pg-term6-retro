@@ -36,11 +36,10 @@ export default function Home() {
         <div className="container max-w-6xl mx-auto text-center">
           <Badge className="mb-4" variant="outline">Term 6 • 2025</Badge>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-            Demonstrating Impact Through Verifiable Evidence
+            Term 6 Impact Report
           </h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Term 6 marked the most productive and strategically aligned period for the ENS Public Goods Working Group. 
-            Every grant is backed by publicly verifiable metrics demonstrating real-world impact.
+            ENS Public Goods Working Group funded infrastructure, security, and education projects in 2025. All grants include verifiable metrics.
           </p>
           
           {/* Impact Metrics Grid */}
@@ -160,14 +159,14 @@ export default function Home() {
                       <Shield className="h-8 w-8 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-2xl font-bold mb-1">Protecting Critical DeFi Infrastructure</h4>
+                      <h4 className="text-2xl font-bold mb-1">Compiler Diversity for DeFi Security</h4>
                       <p className="text-muted-foreground">Vyper • Security Infrastructure • $50,000 USDC</p>
                     </div>
                   </div>
                   <Badge variant="secondary" className="text-lg px-4 py-2">Strategic Grant</Badge>
                 </div>
                 <p className="text-sm">
-                  Vyper secures over $4.7 billion in TVL across Curve, Lido, and Yearn, providing critical compiler diversity that prevents catastrophic ecosystem-wide failure from Solidity vulnerabilities.
+                  Vyper secures $4.7 billion in TVL across Curve, Lido, and Yearn, providing compiler diversity that reduces systemic risk from Solidity vulnerabilities.
                 </p>
               </div>
               
@@ -175,7 +174,7 @@ export default function Home() {
                 <div className="mb-6">
                   <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
                   <p className="text-muted-foreground leading-relaxed">
-                    Vyper provides critical compiler diversity for Ethereum, protecting over $4.7 billion in TVL across Curve, Lido, and Yearn. A single vulnerability in Solidity could compromise the entire DeFi ecosystem—Vyper ensures that doesn't happen. ENS funding enabled the team to deploy four critical security fixes including CVE-2025-21607, which prevented silent failures in smart contract logic that could have led to catastrophic losses. The grant also supported translation of the ENS Universal Resolver to Vyper, demonstrating the language's production readiness for complex protocol development. With Ethereum Foundation matching funds secured, this investment ensures long-term compiler diversity and ecosystem resilience. The team ran workshops at ETHTokyo, engaged with the Chinese community on translations, and is partnering with BuidlGuidl for educational content, expanding Vyper's reach to the next generation of Ethereum developers.
+                    Vyper provides compiler diversity for Ethereum, protecting $4.7 billion in TVL across Curve, Lido, and Yearn. A vulnerability in Solidity could compromise the DeFi ecosystem. ENS funding enabled deployment of four security fixes including CVE-2025-21607, which prevented silent failures in smart contract logic. The grant supported translation of the ENS Universal Resolver to Vyper, demonstrating production readiness for protocol development. Ethereum Foundation provided matching funds for continued development. The team conducted workshops at ETHTokyo, worked with the Chinese community on translations, and partnered with BuidlGuidl for educational content.
                   </p>
                 </div>
 
@@ -198,14 +197,14 @@ export default function Home() {
                       <Users className="h-8 w-8 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-2xl font-bold mb-1">Shaping Global Crypto Policy</h4>
+                      <h4 className="text-2xl font-bold mb-1">Decentralization Policy Research</h4>
                       <p className="text-muted-foreground">Decentralization Research Center • Policy & Advocacy • $150,000 USDC</p>
                     </div>
                   </div>
                   <Badge variant="secondary" className="text-lg px-4 py-2">Strategic Grant</Badge>
                 </div>
                 <p className="text-sm">
-                  DRC has emerged as the leading think tank for decentralization policy, directly influencing regulatory frameworks through research cited by a16z Crypto, Chia Network, and the SEC.
+                  DRC conducts research on decentralization policy. Their work has been cited by a16z Crypto, Chia Network, and referenced in SEC discussions.
                 </p>
               </div>
               
@@ -213,7 +212,7 @@ export default function Home() {
                 <div className="mb-6">
                   <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
                   <p className="text-muted-foreground leading-relaxed">
-                    The DRC has emerged as the leading think tank for decentralization policy, directly shaping the regulatory frameworks that will determine whether Web3 can thrive or be strangled by unclear laws. Their April 2025 report "Designing Policy for a Flourishing Blockchain Industry" proposed a control-based framework for defining decentralization under law—research that was immediately cited by a16z Crypto in their SEC submission and by Chia Network in their S-1 filing. ENS funding enabled the DRC to submit a response to the Senate Banking Committee's RFI on digital assets, meet directly with the SEC Crypto Task Force, and host the 2025 Decentralized Tech Summit at the National Press Club, educating over 100 policymakers, academics, and industry experts. This work provides the intellectual foundation for sensible crypto regulation, protecting not just ENS but the entire ecosystem from regulatory overreach. With partnerships at Harvard Kennedy School and Stanford Center for Blockchain Research, the DRC is building the academic credibility needed to influence policy at the highest levels.
+                    DRC conducts research on decentralization policy. Their April 2025 report "Designing Policy for a Flourishing Blockchain Industry" proposed a control-based framework for defining decentralization under law. The research was cited by a16z Crypto in their SEC submission and by Chia Network in their S-1 filing. ENS funding enabled DRC to submit a response to the Senate Banking Committee's RFI on digital assets, meet with the SEC Crypto Task Force, and host the 2025 Decentralized Tech Summit at the National Press Club, attended by over 100 policymakers, academics, and industry experts. DRC has partnerships with Harvard Kennedy School and Stanford Center for Blockchain Research.
                   </p>
                 </div>
 
@@ -236,7 +235,7 @@ export default function Home() {
                       <Code className="h-8 w-8 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-2xl font-bold mb-1">Sustaining Ethereum's Core Development</h4>
+                      <h4 className="text-2xl font-bold mb-1">Solidity Maintenance and Development</h4>
                       <p className="text-muted-foreground">Argot Collective • Solidity & Dev Tools • $100,000 USDC</p>
                     </div>
                   </div>
@@ -251,7 +250,7 @@ export default function Home() {
                 <div className="mb-6">
                   <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
                   <p className="text-muted-foreground leading-relaxed">
-                    Argot Collective maintains Solidity—the language that powers every ENS contract and over $250 billion in TVL across Ethereum. Formed by 25 former Ethereum Foundation employees, the team is responsible for the most critical infrastructure in the ecosystem. ENS funding supports the transition to Core Solidity 1.0, including a new IR pipeline that will improve compilation times and prepare the language for future network upgrades. In October 2025, Argot launched the Sourcify 4byte API with 4.7 million function signatures, making 1.9 million previously unverified contracts transparent to wallets, block explorers, and security tools. This dramatically improves security for Web3 users by making transaction data human-readable. The team is also maintaining hevm (formal verification), Sourcify (contract verification), and Act (specification language)—all essential public goods. With the "Road to Core Solidity" blog series and participation in Solidity Summit 2025, Argot is transparently communicating the language's evolution to the developer community while ensuring Ethereum's foundation remains secure and performant.
+                    Argot Collective maintains Solidity, which powers ENS contracts and $250 billion in TVL across Ethereum. The team includes 25 former Ethereum Foundation employees. ENS funding supports the transition to Core Solidity 1.0, including a new IR pipeline to improve compilation times and prepare for network upgrades. In October 2025, Argot launched the Sourcify 4byte API with 4.7 million function signatures, making 1.9 million unverified contracts transparent to wallets, block explorers, and security tools. The team maintains hevm (formal verification), Sourcify (contract verification), and Act (specification language). Argot published the "Road to Core Solidity" blog series and participated in Solidity Summit 2025.
                   </p>
                 </div>
 
@@ -274,7 +273,7 @@ export default function Home() {
                       <TrendingUp className="h-8 w-8 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-2xl font-bold mb-1">Enabling ENS Layer 2 Interoperability</h4>
+                      <h4 className="text-2xl font-bold mb-1">Layer 2 Infrastructure for ENS</h4>
                       <p className="text-muted-foreground">Fabric • Based Rollup Infrastructure • $50,000 USDC</p>
                     </div>
                   </div>
@@ -289,7 +288,7 @@ export default function Home() {
                 <div className="mb-6">
                   <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
                   <p className="text-muted-foreground leading-relaxed">
-                    Fabric is building the infrastructure that will enable ENS's Namechain to achieve a 99% cost reduction for domain operations, making ENS accessible to billions of users. The initiative coordinates over 20 ecosystem participants including Optimism, Arbitrum, Scroll, and Namechain to develop neutral standards for based rollups. ENS funding supported the completion of two security audits on the registry contract and helped achieve approximately 30% validator adoption for Commit-Boost on Ethereum mainnet. This infrastructure enables pre-confirmations and seamless L2-to-L2 bridging, solving the fragmentation problem that has plagued the Layer 2 ecosystem. Fabric's work directly benefits ENS by providing the technical foundation for Namechain's proof of concept with Linea, demonstrating that based rollup capabilities can deliver the scalability ENS needs without sacrificing security. By creating shared standards rather than proprietary solutions, Fabric ensures that the entire Ethereum ecosystem benefits from this infrastructure, reducing duplication and accelerating innovation across all Layer 2s.
+                    Fabric builds infrastructure to enable ENS's Namechain to achieve 99% cost reduction for domain operations. The initiative coordinates over 20 ecosystem participants including Optimism, Arbitrum, Scroll, and Namechain to develop standards for based rollups. ENS funding supported completion of two security audits on the registry contract and helped achieve approximately 30% validator adoption for Commit-Boost on Ethereum mainnet. This infrastructure enables pre-confirmations and L2-to-L2 bridging. Fabric provided the technical foundation for Namechain's proof of concept with Linea.
                   </p>
                 </div>
 
@@ -312,7 +311,7 @@ export default function Home() {
                       <GraduationCap className="h-8 w-8 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-2xl font-bold mb-1">Maintaining Ethereum's Gateway IDE</h4>
+                      <h4 className="text-2xl font-bold mb-1">Browser-Based Ethereum IDE</h4>
                       <p className="text-muted-foreground">Remix Labs • Ethereum IDE • $50,000 USDC</p>
                     </div>
                   </div>
@@ -327,7 +326,7 @@ export default function Home() {
                 <div className="mb-6">
                   <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
                   <p className="text-muted-foreground leading-relaxed">
-                    Remix is the gateway to Ethereum development, having deployed over 12 million smart contracts and serving as the primary tool for Ethereum education globally. Used in university courses, bootcamps, and hackathons worldwide, Remix provides zero-friction onboarding—no installation required, just open a browser and start building. ENS funding (25% of the $200,000 total with Ethereum Foundation matching) supports Remix's critical transition from EF stewardship to independent sustainability. The first iteration of the new Remix platform launched in Q1 2025, with ENS integration and dedicated subdomains for storage and test contracts under discussion. This ensures that the tool that has educated thousands of developers remains free, accessible, and continuously improved. By supporting Remix, ENS invests in the next generation of Ethereum builders—many of whom will go on to build on ENS itself. The team is developing an impact page with Dune analytics integration to provide transparent metrics on the platform's reach and influence, demonstrating the compounding returns of investing in developer education infrastructure.
+                    Remix has deployed over 12 million smart contracts and is used for Ethereum education globally. Used in university courses, bootcamps, and hackathons worldwide, Remix requires no installation. ENS funding (25% of $200,000 total with Ethereum Foundation matching) supports Remix's transition from EF stewardship to independent sustainability. The first iteration of the new Remix platform launched in Q1 2025, with ENS integration and dedicated subdomains for storage and test contracts under discussion. The team is developing an impact page with Dune analytics integration.
                   </p>
                 </div>
 
@@ -350,7 +349,7 @@ export default function Home() {
                       <Globe className="h-8 w-8 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-2xl font-bold mb-1">Representing Web3 in Global Internet Governance</h4>
+                      <h4 className="text-2xl font-bold mb-1">ICANN Policy Engagement</h4>
                       <p className="text-muted-foreground">ICANN Engagement • Policy Advocacy • Up to $25,000 USDC</p>
                     </div>
                   </div>
@@ -365,7 +364,7 @@ export default function Home() {
                 <div className="mb-6">
                   <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
                   <p className="text-muted-foreground leading-relaxed">
-                    ICANN governs the traditional internet's domain name system, and its policies directly impact ENS users. Without expert representation in ICANN forums, web3 naming systems face potential namespace collisions, regulatory misunderstandings, and policy decisions made without decentralized perspectives. ENS funding enabled Emily Murray to attend ICANN84 in Dublin (October 25-30, 2025), participate in the SSAC RIDE Working Party on web3 naming issues, and submit two rounds of public comments on the 2026 gTLD Applicant Guidebook—the policy framework that will govern the next generation of top-level domains. This advocacy ensures that ENS's interests are represented in global internet governance discussions, that ICANN stakeholders receive accurate information about web3 domains, and that misinformation is countered with technical expertise. Emily's work protects ENS users from potential conflicts with traditional DNS while educating the ICANN community on the security and innovation benefits of decentralized naming. With ICANN85 in Mumbai planned, this ongoing engagement ensures ENS has a voice in the forums where critical internet infrastructure decisions are made.
+                    ICANN governs the traditional internet's domain name system. Its policies impact ENS users. ENS funding enabled Emily Murray to attend ICANN84 in Dublin (October 25-30, 2025), participate in the SSAC RIDE Working Party on web3 naming issues, and submit two rounds of public comments on the 2026 gTLD Applicant Guidebook. This ensures ENS interests are represented in internet governance discussions. ICANN85 in Mumbai is planned for continued engagement.
                   </p>
                 </div>
 
@@ -387,9 +386,9 @@ export default function Home() {
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Badge className="mb-4" variant="secondary">Builder Grants</Badge>
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">Empowering Grassroots Innovation</h3>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">Builder Grants</h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              46 grants supporting developers, educators, and community builders across the Ethereum ecosystem.
+              46 grants supporting developers, educators, and community builders.
             </p>
           </div>
 
@@ -508,9 +507,9 @@ export default function Home() {
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Badge className="mb-4" variant="secondary">Impact Analysis</Badge>
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">Verifiable Evidence & Transparency</h3>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">Data and Transparency</h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Every metric is backed by publicly verifiable sources: GitHub, government databases, official websites, and third-party validation.
+              Metrics are backed by publicly verifiable sources: GitHub, government databases, official websites, and third-party validation.
             </p>
           </div>
 
