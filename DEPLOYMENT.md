@@ -5,7 +5,36 @@ The ENS PG Term 6 Dashboard has been pushed to GitHub! Here's how to get it onli
 ## Repository
 https://github.com/SovereignSignal/ens-pg-term6-retro
 
-## Option 1: GitHub Pages (Recommended - Free)
+## Option 1: Railway (Recommended)
+
+Railway provides a simple deployment with automatic builds and full Node.js server support.
+
+### Step 1: Connect to Railway
+1. Go to https://railway.app
+2. Click **New Project** → **Deploy from GitHub repo**
+3. Select `SovereignSignal/ens-pg-term6-retro`
+4. Railway will automatically detect the configuration
+
+### Step 2: Configure (Optional)
+The project includes a `railway.toml` configuration file. Railway will:
+- Use Nixpacks with Node.js 22
+- Run `pnpm install` to install dependencies
+- Run `pnpm build` to build the project
+- Start with `node dist/index.js`
+
+### Step 3: Deploy
+- Railway automatically deploys on every push to `main`
+- Your site will be live at: `https://your-project.up.railway.app`
+- Add a custom domain in Railway dashboard under **Settings** → **Domains**
+
+### Environment Variables (Optional)
+Set these in Railway dashboard if needed:
+- `NODE_ENV` - Automatically set to `production`
+- `PORT` - Automatically assigned by Railway
+
+---
+
+## Option 2: GitHub Pages (Free)
 
 ### Step 1: Enable GitHub Pages
 1. Go to your repository: https://github.com/SovereignSignal/ens-pg-term6-retro
@@ -89,7 +118,7 @@ jobs:
 
 ---
 
-## Option 2: Vercel (Alternative - Also Free)
+## Option 3: Vercel (Alternative - Also Free)
 
 1. Go to https://vercel.com
 2. Click **Add New** → **Project**
@@ -102,7 +131,7 @@ jobs:
 
 ---
 
-## Option 3: Netlify (Alternative - Also Free)
+## Option 4: Netlify (Alternative - Also Free)
 
 1. Go to https://netlify.com
 2. Click **Add new site** → **Import an existing project**
