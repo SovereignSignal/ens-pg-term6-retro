@@ -75,6 +75,16 @@ const timelineEvents: GrantEvent[] = [
     forumLink: "https://discuss.ens.domains/t/ens-public-goods-working-group-funding-icann-engagement-and-policy-advocacy/19918",
     color: "bg-violet-500",
   },
+  {
+    id: "phantom-zone",
+    date: "Oct 15",
+    month: "October",
+    grantee: "Phantom Zone",
+    amount: "$25,000",
+    description: "Advanced cryptographic tools including FHE and encrypted execution environments",
+    forumLink: "https://discuss.ens.domains/t/ens-public-goods-working-group-funding-phantom-zone/21646",
+    color: "bg-emerald-500",
+  },
 ];
 
 export function StrategicGrantsTimeline() {
@@ -161,9 +171,9 @@ export function StrategicGrantsTimeline() {
               <p className="text-sm text-muted-foreground">
                 Total Strategic Grants in Term 6
               </p>
-              <p className="text-3xl font-bold text-primary">$425,000 USDC</p>
+              <p className="text-3xl font-bold text-primary">$450,000 USDC</p>
               <p className="text-sm text-muted-foreground">
-                Across 6 projects from March to September 2025
+                Across 7 projects from March to October 2025
               </p>
             </div>
           </div>

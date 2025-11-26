@@ -50,8 +50,8 @@ export default function Home() {
                 <CardDescription>Infrastructure & Ecosystem</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold text-primary mb-2">$425,000 USDC</div>
-                <p className="text-sm text-muted-foreground">6 grants • Co-funded with Ethereum Foundation</p>
+                <div className="text-3xl font-bold text-primary mb-2">$450,000 USDC</div>
+                <p className="text-sm text-muted-foreground">7 grants • Co-funded with Ethereum Foundation</p>
               </CardContent>
             </Card>
 
@@ -76,7 +76,7 @@ export default function Home() {
             <Badge className="mb-4" variant="secondary">Strategic Grants</Badge>
             <h3 className="text-3xl md:text-4xl font-bold mb-4">Impact Case Studies</h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Six strategic grants supporting essential ecosystem infrastructure, each demonstrating measurable impact through verifiable evidence.
+              Seven strategic grants supporting essential ecosystem infrastructure, each demonstrating measurable impact through verifiable evidence.
             </p>
           </div>
 
@@ -290,7 +290,7 @@ export default function Home() {
                   Expert representation in ICANN forums with 2 public comment submissions on the 2026 gTLD Applicant Guidebook and participation at ICANN84 in Dublin.
                 </p>
               </div>
-              
+
               <CardContent className="p-6">
                 <div className="mb-6">
                   <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
@@ -302,6 +302,44 @@ export default function Home() {
                 <div className="mt-6 pt-6 border-t">
                   <Button variant="outline" size="sm" asChild>
                     <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-icann-engagement-and-policy-advocacy/19918" target="_blank" rel="noopener noreferrer">
+                      View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Phantom Zone Case Study */}
+            <Card className="overflow-hidden border-2">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 border-b">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-4">
+                    <div className="h-16 w-16 rounded-2xl bg-primary/20 flex items-center justify-center">
+                      <Shield className="h-8 w-8 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-bold mb-1">Privacy-Preserving Cryptographic Infrastructure</h4>
+                      <p className="text-muted-foreground">Phantom Zone • Cryptography Research • $25,000 USDC</p>
+                    </div>
+                  </div>
+                  <Badge variant="secondary" className="text-lg px-4 py-2">Strategic Grant</Badge>
+                </div>
+                <p className="text-sm">
+                  Advanced cryptographic tools including fully homomorphic encryption (FHE) and encrypted execution environments, with matching support from Ethereum Foundation ESP.
+                </p>
+              </div>
+
+              <CardContent className="p-6">
+                <div className="mb-6">
+                  <h5 className="font-semibold mb-3">Why This Funding Matters</h5>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Phantom Zone is a research and engineering organization making advanced cryptographic tools practical for real-world applications. Their work includes Poulpy, a fast modular FHE library with unified plaintext space and hardware abstraction; Phantom, an encrypted virtual machine enabling execution of Rust programs on encrypted data without revealing program code, inputs, or execution traces; and research into local mixing obfuscation requiring no additional trust assumptions. ENS funding, matched by Ethereum Foundation ESP, enables privacy-preserving applications on Ethereum including encrypted smart contracts with hidden state and privacy-preserving DeFi.
+                  </p>
+                </div>
+
+                <div className="mt-6 pt-6 border-t">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="https://discuss.ens.domains/t/ens-public-goods-working-group-funding-phantom-zone/21646" target="_blank" rel="noopener noreferrer">
                       View Forum Post <ExternalLink className="ml-2 h-4 w-4" />
                     </a>
                   </Button>
@@ -518,6 +556,7 @@ export default function Home() {
                     <li>• Remix Labs ($50k, 25% of $200k total)</li>
                     <li>• Fabric ($50k + ecosystem matching)</li>
                     <li>• DRC ($150k + ~$300k additional)</li>
+                    <li>• Phantom Zone ($25k + EF ESP matching)</li>
                   </ul>
                 </div>
                 <div>
